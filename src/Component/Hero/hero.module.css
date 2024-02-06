@@ -1,0 +1,52 @@
+.heroContent {
+  display: flex;
+  margin-top: 5rem;
+  /* justify-content: space-between; */
+  /* gap: 10rem; */
+  align-items: center;
+  /* text-align: center; */
+}
+.banner h4 {
+  width: 480px;
+  font-size: 38px;
+  line-height: 60px;
+  letter-spacing: 1.75px;
+}
+.heroImg img {
+  max-width: 660px;
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width: 540px) {
+  .heroContent {
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+/* .banner h4 {
+  width: 390px;
+  font-size: 28px;
+  line-height: 60px;
+  letter-spacing: 1.75px;
+} */
+}
+@media screen and (max-width: 500px) {
+.banner h4 {
+  width: 350px;
+  font-size: 28px;
+  line-height: 60px;
+  letter-spacing: 1.75px;
+}
+}
+@media screen and (max-width: 320px) {
+.banner h4 {
+  width: 305px;
+}
+}
+@media screen and (max-width: 280px) {
+.banner h4 {
+  width: 250px;
+  font-size: 25px;
+  /* line-height: 60px; */
+  /* letter-spacing: 1.75px; */
+}
+}

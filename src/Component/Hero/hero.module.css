@@ -1,3 +1,6 @@
+.heroContainer{
+  min-height: 80vh;
+}
 .heroContent {
   display: flex;
   margin-top: 5rem;

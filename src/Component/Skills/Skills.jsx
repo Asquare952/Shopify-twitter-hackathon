@@ -1,7 +1,7 @@
 const MySkills = () => {
   return ( 
     <>
-    <section></section>
+    <section> </section>
     </>
    );
 }

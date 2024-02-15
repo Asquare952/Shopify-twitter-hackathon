@@ -17,61 +17,61 @@ const MySkills = () => {
             </h4>
           </div>
           <div className={Styles.skills}>
-            <div className={Styles.column}>
+            {/* <div className={Styles.column}> */}
               <div className={Styles.skillItem}>
                 <TiHtml5 className={Styles.icon} />
                 <p>HTML</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <IoLogoCss3 className={Styles.icon} />
                 <p>CSS</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <IoLogoJavascript className={Styles.icon} />
-                <p>JavaScript</p>
+                <p>Java</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <FaReact className={Styles.icon} />
-                <p>React.js</p>
+                <p>React</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <FaGitAlt className={Styles.icon} />
                 <p>Git</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <FaGithub className={Styles.icon} />
                 <p>Github</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <TbBrandNextjs className={Styles.icon} />
                 <p>Next.js</p>
               </div>
-            </div>
 
-            <div className={Styles.column}>
               <div className={Styles.skillItem}>
                 <TbBrandNextjs className={Styles.icon} />
                 <p>Next.js</p>
               </div>
-            </div>
+            {/* </div> */}
+
+            {/* <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div>
+
+            <div className={Styles.column}></div> */}
 
             {/* <div className={Styles.column}>
               <div className={Styles.skillItem}>

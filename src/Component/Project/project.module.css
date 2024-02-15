@@ -1,4 +1,5 @@
 .projectContainer {
+  width: 100%;
   background-color: #000000;
   color: #ffff;
 }
@@ -26,8 +27,8 @@ span{
   align-items: center;
   gap: 1rem;
 }
-.project:not(:last-child){
-  margin-bottom: 2rem;
+.project{
+  margin-bottom: 5rem;
 }
 .img img{
   max-width: 950px;
@@ -57,5 +58,15 @@ span{
 }
 .details p{
   width: 372px;
+}
+}
+@media screen and (max-width: 360px) {
+.details p{
+  width: 302px;
+}
+}
+@media screen and (max-width: 280px) {
+.details p{
+  width: 250px;
 }
 }

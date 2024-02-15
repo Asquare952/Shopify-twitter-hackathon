@@ -4,6 +4,8 @@ import Hero from "./Component/Hero/Hero";
 import Skill from "./Component/Skill/Skills";
 import About from "./Component/About/About";
 import Project from "./Component/Project/Project";
+import Contact from "./Component/Contact/Contact";
+import Footer from "./Component/Footer/Footer";
 function App() {
   return (
     <>
@@ -13,6 +15,8 @@ function App() {
         <Skill />
         <About />
         <Project />
+        <Contact />
+        <Footer />
       </section>
     </>
   );

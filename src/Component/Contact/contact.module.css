@@ -48,10 +48,15 @@ textarea {
 }
 .getInTouchBtn{
   /* width: 100%; */
+  border: none;
   padding: 8px 13px;
   background-color: #000000;
   border-radius: 4px;
   text-transform: capitalize;
+  scale: 1.05;
+}
+.getInTouchBtn:hover{
+  scale: 1.05;
 }
 .getInTouchBtn a{
   color: white;
@@ -63,12 +68,13 @@ textarea {
 .socialLinksItem{
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   border: 1px solid #000000;
-  padding: 5px 6px;
+  padding: 3px 6px;
   border-radius: 4px;
 }
-.socialLinksItem:hover{
+.socialLinksItem :hover{
   background-color: #000000;
   color: #ffff;
 }

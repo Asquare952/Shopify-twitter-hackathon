@@ -1,41 +1,57 @@
-import Styles from "./navbar.module.css";
-import Logo from "../../Asset/logo.png"
+import "./navbar.css";
+import { useState } from "react";
+import Logo from "../../Asset/logo.png";
+import { FiMenu } from "react-icons/fi";
+import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
+  const [sideNav, setSideNav] = useState(false);
+
   return (
     <>
       <header>
-        <div className={Styles.subContainer}>
-          <div className={Styles.layout}>
-            <div className={Styles.logo}>
-              <a href="/">
-                <img src={Logo} alt="az logo" />
-              </a>
+        <div className="subContainer">
+          <div className="navlayout">
+            <div className="logo">
+              <img src={Logo} alt="" />
             </div>
-            <nav>
-              <ul className={Styles.navLinks}>
-                <li className={Styles.links}>
-                  <a href="">Home</a>
-                </li>
-                <li className={Styles.links}>
-                  <a href="">About</a>
-                </li>
-                <li className={Styles.links}>
-                  <a href="">Skills</a>
-                </li>
-                <li className={Styles.links}>
-                  <a href="">Projects</a>
-                </li>
-                <li className={Styles.links}>
-                  <a href="">Contact Me</a>
-                </li>
-              </ul>
-            </nav>
-
-            <div className={Styles.downloadCv}>
-              <button className={Styles.downloadBtn}>
-                <a href="">Download CV</a>
-              </button>
+            <div className="navbar">
+              <nav className={sideNav? "navLinks expand" : "navLinks"} onClick={() => {setSideNav(!sideNav)}}>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                  <li>
+                    <a href="" className="downloadBtn">
+                      Download cv
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
+            <button
+              className="navToggler"
+              onClick={() => {
+                setSideNav(!sideNav);
+              }}
+            >
+              {sideNav ? (
+                <IoMdClose className="menuBar" />
+              ) : (
+                <FiMenu className="closeIcon" />
+              )}
+            </button>
           </div>
         </div>
       </header>

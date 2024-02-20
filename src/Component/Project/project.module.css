@@ -30,6 +30,10 @@ span{
 .project{
   margin-bottom: 5rem;
 }
+#projectThree{
+  margin-bottom: 5rem;
+  
+}
 .img img{
   max-width: 950px;
   width: 100%;
@@ -56,6 +60,7 @@ span{
 #projectTwo{
   flex-direction: column-reverse;
 }
+
 .details p{
   width: 372px;
 }

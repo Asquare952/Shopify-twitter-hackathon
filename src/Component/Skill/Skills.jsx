@@ -30,7 +30,7 @@ const MySkills = () => {
 
               <div className={Styles.skillItem}>
                 <IoLogoJavascript className={Styles.icon} />
-                <p>Java</p>
+                <p>JavaScript</p>
               </div>
 
               <div className={Styles.skillItem}>
@@ -53,10 +53,10 @@ const MySkills = () => {
                 <p>Next.js</p>
               </div>
 
-              <div className={Styles.skillItem}>
+              {/* <div className={Styles.skillItem}>
                 <TbBrandNextjs className={Styles.icon} />
                 <p>Next.js</p>
-              </div>
+              </div> */}
             {/* </div> */}
 
             {/* <div className={Styles.column}></div>

@@ -1,0 +1,124 @@
+header {
+  position: fixed;
+  background-color: #ffff;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999;
+}
+.subContainer {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.logo img {
+  width: 45px;
+}
+.navlayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.navLinks ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLinks li {
+  position: relative;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.navLinks li:last-child {
+  margin-left: 8rem;
+}
+.navLinks li a:hover::after,
+.navLinks li a.active::after {
+  content: " ";
+  width: 70%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  bottom: -4px;
+  left: 10px;
+  transition: 0.5s ease-in-out;
+}
+.downloadBtn {
+  padding: 10px 10px;
+  background-color: #000000;
+  color: #ffff;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: scale 0.5 ease-in-out;
+}
+.downloadBtn:hover {
+  scale: 1.05;
+}
+.downloadBtn:active {
+  scale: 0.95;
+}
+.navToggler {
+  background: #ffff;
+  color: #000000;
+  display: none;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 750px) {
+  .navLinks {
+    position: absolute;
+    top: 70px;
+    /* left: 0; */
+    right: -300px;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffff;
+    padding: 40px 0 0 10px;
+    /* display: none; */
+    transition: 0.5s ease-in-out;
+  }
+  .navLinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .navLinks li:last-child {
+    margin-left: 0.1rem;
+  }
+  .navLinks li {
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px 0;
+  }
+  .navLinks ul li {
+    width: 100%;
+  }
+  .menuBar {
+    font-size: 45px;
+  }
+  .closeIcon {
+    font-size: 45px;
+  }
+  .navToggler {
+    display: block;
+  }
+  .expand {
+    /* height: 165px; */
+    right: 0;
+    visibility: visible;
+    transition:  1s ease-in-out;
+  }
+}
+/* @media screen and (max-width: 500px) {
+  #navLinks{
+    width: 100%;
+  }
+  #navLinks li {
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px 10px;
+  }
+} */

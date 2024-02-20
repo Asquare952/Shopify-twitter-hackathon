@@ -58,7 +58,7 @@ const Project = () => {
             {/* project 2 ends here */}
 
             {/* project 3 */}
-            <div className={Styles.project}>
+            <div className={Styles.project} id="projectThree">
               <div className={Styles.img}>
                 <img src={ProjectThreeImg} alt="" />
               </div>

@@ -29,6 +29,9 @@ span{
   display: block;
 }
 @media screen and (max-width: 540px) {
+  .heroContainer{
+  margin-top: 1rem;
+}
   .heroContent {
   flex-direction: column-reverse;
   gap: 1rem;

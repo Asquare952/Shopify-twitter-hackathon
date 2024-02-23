@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 .navLinks ul {
   display: flex;
@@ -69,15 +69,15 @@ header {
 @media screen and (max-width: 750px) {
   .navLinks {
     position: absolute;
-    top: 70px;
+    top: 63px;
     /* left: 0; */
-    right: -300px;
+    right: -900px;
     width: 100%;
     height: 100vh;
     background-color: #ffff;
     padding: 40px 0 0 10px;
     /* display: none; */
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
   }
   .navLinks ul {
     display: flex;
@@ -86,21 +86,21 @@ header {
     justify-content: flex-start;
   }
   .navLinks li:last-child {
-    margin-left: 0.1rem;
+    margin-left: 0.01rem;
   }
   .navLinks li {
     position: relative;
-    padding: 10px 10px;
-    margin: 10px 0;
+    padding: 10px 5px;
+    /* margin: 1px 0; */
   }
   .navLinks ul li {
     width: 100%;
   }
   .menuBar {
-    font-size: 45px;
+    font-size: 30px;
   }
   .closeIcon {
-    font-size: 45px;
+    font-size: 30px;
   }
   .navToggler {
     display: block;
@@ -112,13 +112,3 @@ header {
     transition:  1s ease-in-out;
   }
 }
-/* @media screen and (max-width: 500px) {
-  #navLinks{
-    width: 100%;
-  }
-  #navLinks li {
-    position: relative;
-    padding: 10px 10px;
-    margin: 10px 10px;
-  }
-} */

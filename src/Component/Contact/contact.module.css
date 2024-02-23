@@ -74,9 +74,9 @@ textarea {
   padding: 3px 6px;
   border-radius: 4px;
 }
-.socialLinksItem :hover{
+.socialLinksItem:hover{
   background-color: #000000;
-  color: #ffff;
+  /* color: #ffff; */
 }
 .text{
   display: flex;
@@ -101,11 +101,15 @@ textarea {
 @media screen and (max-width: 740px) {
   .layout {
   flex-direction: column;
+  gap: 3rem;
 }
 .getInTouch{
   flex-direction: column;
 }
 textarea {
   width: 100%;
+}
+.colm{
+  margin-bottom: 2rem;
 }
 }

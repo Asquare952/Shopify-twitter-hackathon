@@ -23,6 +23,11 @@ span {
   max-width: 525px;
   width: 100%;
 }
+.aboutMe{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .aboutMe p {
   width: 569px;
   font-size: 18px;

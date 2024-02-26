@@ -1,57 +1,33 @@
 import "./navbar.css";
 import { useState } from "react";
-import Logo from "../../Asset/logo.png";
-import { FiMenu } from "react-icons/fi";
-import { IoMdClose } from "react-icons/io";
+import Logo from "../../Asset/logo.png"; 
+import { FaBell } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
-  const [sideNav, setSideNav] = useState(false);
+  const [, setSideNav] = useState(false);
 
   return (
     <>
       <header>
-        <div className="subContainer">
-          <div className="navlayout">
-            <div className="logo">
-              <img src={Logo} alt="" />
-            </div>
-            <div className="navbar">
-              <nav className={sideNav? "navLinks expand" : "navLinks"} onClick={() => {setSideNav(!sideNav)}}>
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Skills</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
-                  </li>
-                  <li>
-                    <a href="" className="downloadBtn">
-                      Download cv
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <button
-              className="navToggler"
-              onClick={() => {
-                setSideNav(!sideNav);
-              }}
-            >
-              {sideNav ? (
-                <IoMdClose className="menuBar" />
-              ) : (
-                <FiMenu className="closeIcon" />
-              )}
+        <div className="navlayout">
+          <div className="logo">
+            <img src={Logo} alt="" className="logoImg"/>
+            <i className="textLogo">shopify</i>
+          </div>
+          {/*  */}
+          <div className="searchinput">
+            <CiSearch className="searchIcon"/>
+            <input type="search" placeholder="Search" />
+          </div>
+          {/*  */}
+          <div className="bellDavii">
+            <button className="bell">
+              <FaBell />
             </button>
+            <div className="davii">
+              <p>Davii collections</p>
+              <button>DC</button>
+            </div>
           </div>
         </div>
       </header>

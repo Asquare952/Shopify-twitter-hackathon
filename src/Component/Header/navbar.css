@@ -1,70 +1,77 @@
 header {
   position: fixed;
-  background-color:#1A1A1A;
+  background-color: #1a1a1a;
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 .navlayout {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.3rem;
+  gap: 1rem;
+  padding: 10px 0;
 }
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .3rem;
+  gap: 0.3rem;
 }
-.logoImg{
+.logoImg {
   width: 30px;
 }
-.textLogo{
+.textLogo {
   letter-spacing: 1.5px;
   font-size: 23px;
   color: #fff;
 }
- input{
+.searchinput {
   position: relative;
+}
+input {
   padding-left: 29px;
   padding-right: 190px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   outline: none;
   background-color: #303030;
   border: 1px solid #616161;
 }
-::placeholder{
-  color: #B5B5B5;
+::placeholder {
+  color: #b5b5b5;
 }
-.searchIcon{
+.searchIcon {
   position: absolute;
-  top: 1.2rem;
-  right:  60.35rem;
-  bottom: 0;
-  color: #B5B5B5;
+  top: 0.5rem;
+  left: 0.5rem;
+  /* bottom: .6rem; */
+  color: #b5b5b5;
   z-index: 999;
 }
-.bell{
+.bell {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-.bellDavii{
+.bellDavii {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .6rem;
+  gap: 0.6rem;
 }
-.bell{
+.bell {
   border: none;
   border-radius: 8px;
   color: #fff;
   padding: 9px;
-  background:#303030;
+  background: #303030;
+  cursor: pointer;
 }
 .davii {
   display: flex;
@@ -74,61 +81,119 @@ header {
   padding-bottom: 4px;
   padding-left: 10px;
   padding-right: 2px;
-  gap: .5rem;
-  background:#303030;
+  gap: 0.5rem;
+  background: #303030;
   border-radius: 8px;
-
 }
-.davii p{
+.davii p {
   font-size: 12px;
   color: #ffff;
 }
-.davii button{
+.davii button {
   border: none;
   padding: 3px;
   border-radius: 6px;
-  background-color: #36FBA1;
+  background-color: #36fba1;
+  cursor: pointer;
+}
+.menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 5rem;
+  left: 75rem;
+  width: 320px;
+  height: 452px;
+  padding: 9px 7px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  z-index: 999;
+}
+.daviiHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.daviiCheck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  padding-right: 2px;
+  gap: 0.5rem;
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+.checkIcon {
+  width: 30.67px;
+}
+.daviiHeader button {
+  border: none;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #36fba1;
+  cursor: pointer;
+}
+.stores {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding-bottom: 7px;
+  gap: 0.4rem;
+}
+.stores img {
+  width: 25px;
+}
+.hr {
+  width: 100%;
+}
+.help{
+  margin-top: 1rem;
+}
+.help li{
+  padding: 10px 5px;
+}
+.account{
+  margin-top: 1rem;
+}
+.account li{
+  padding: 10px 5px;
+}
+.account small{
+  color: #616161;
 }
 @media screen and (max-width: 540px) {
-  .textLogo{
-  display: none;
-}
-.davii p{
-  display: none;
-}
- input{
-  width: 100%;
-}
-.davii {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 2px;
-}
-.bell{
-  background: none;
-}
-.davii{
-  background: none;
-}
-}
-@media screen and (max-width: 360px) {
- input{
-  width: 100%;
-}
-.bell{
-  display: none;
-  background: none;
-}
+  .textLogo {
+    display: none;
+  }
+  .davii p {
+    display: none;
+    border: none;
+    outline: none;
+  }
+  input {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+  }
+  .bellDavii {
+    gap: 0.2rem;
+  }
+  .davii {
+    background: none;
+  }
+  .bell {
+    background: none;
+  }
 }
 @media screen and (max-width: 320px) {
- input{
-  width: 100%;
-}
-.bell{
-  display: none;
-  background: none;
-}
+  input {
+    width: 100%;
+    padding-right: 15px;
+  }
 }

@@ -1,87 +1,140 @@
 import "./navbar.css";
-import { useState } from "react";
-import Logo from "../../Asset/logo.png";
-import { FaBell } from "react-icons/fa";
+import { FaRegBell } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
-import StoreIcon from "../../Asset/storeicon.png";
-import { IoCheckmark } from "react-icons/io5";
-const Navbar = () => {
-  const [menu, setMenu] = useState(false);
- const handleClick = () =>{
-  setMenu(!menu)
- }
+import { IoFilterOutline } from "react-icons/io5";
+import { CiCircleCheck } from "react-icons/ci";
+import MobileLogo from "../../Assets/logomobile.png";
+import DesktopLogo from "../../Assets/logodesktop.png";
+import StoreIcon from "../../Assets/storeIcon.png";
+import { useState } from "react";
+const NavBar = () => {
+  const [notificationPop, setNotificationPop] = useState(false);
+  const [collectionsPop, setcollectionsPop] = useState(false);
+  const handleNotificationPop = () => {
+    setNotificationPop(!notificationPop);
+  };
+  const handlecollectionsPop = () => {
+    setcollectionsPop(!collectionsPop);
+  };
   return (
     <>
       <header>
-        <div className="navlayout">
+        <section className="navBar">
           <div className="logo">
-            <img src={Logo} alt="" className="logoImg" />
-            <i className="textLogo">Shopify</i>
+            <a href="https://www.shopify.com">
+              <img src={MobileLogo} alt="" />
+            </a>
+            <a href="https://www.shopify.com">
+              <img src={DesktopLogo} alt="" className="logoDesktop" />
+            </a>
           </div>
-          {/*  */}
-          <div className="searchinput">
+
+          <div className="input">
             <CiSearch className="searchIcon" />
             <input type="search" placeholder="Search" />
           </div>
-          {/*  */}
-          <div className="bellDavii">
-            <button className="bell">
-              <FaBell />
-            </button>
-            <div className="davii">
-              <p>Davii collections</p>
-              {menu ? (
-                <button onClick={handleClick}>DC</button>
+
+          <div className="notificationAndStore">
+            <div className="notification">
+              {notificationPop ? (
+                <button
+                  className="notificationBtn"
+                  onClick={handleNotificationPop}
+                >
+                  <FaRegBell className="bell" />
+                </button>
               ) : (
-                <button onClick={handleClick}>DC</button>
+                <button
+                  className="notificationBtn"
+                  onClick={handleNotificationPop}
+                >
+                  <FaRegBell className="bell" />
+                </button>
               )}
-            </div>
-          </div>
-        </div>
-        {menu ? (
-          <div className="menu">
-            <div className="header">
-              <div className="daviiCheck">
-                <div className="daviiHeader">
-                  <button>DC</button>
-                  <p>Davii collections</p>
+
+              {notificationPop ? (
+                <div className="notificationPop">
+                  <div className="alert">
+                    <h3>Alerts</h3>
+                    <div className="filterAndCircleTick">
+                      <IoFilterOutline className="filter" />
+                      <CiCircleCheck className="circleCheck" />
+                    </div>
+                  </div>
+                  <p className="alertMessage">
+                    Alert about your store and account will show here
+                  </p>
                 </div>
-                <IoCheckmark className="checkIcon" />
-              </div>
-              <div className="stores">
-                <img src={StoreIcon} alt="" />
-                <p>All stores</p>
-              </div>
+              ) : null}
             </div>
-            <hr className="hr" />
-            <div className="help">
-              <ul>
-                <li>Help Center</li>
-                <li>Changelog</li>
-                <li>Community forums</li>
-                <li>Hire a Shopify Partner</li>
-                <li>Keyboard shortcuts</li>
-              </ul>
-            </div>
-            <hr />
-            <div className="account">
-              <ul>
-                <li>
-                  David Micheal <br /> <small>davidmicheal@gmail.com</small>
-                </li>
-                <li>
-                  <a href="">Manage account</a>
-                </li>
-                <li>
-                  <a href="">Log out</a>
-                </li>
-              </ul>
+            <div className="store">
+              {collectionsPop ? (
+                <button onClick={handlecollectionsPop}>
+                  <h3>Davii Collection</h3>
+                  <span>DC</span>
+                </button>
+              ) : (
+                <button onClick={handlecollectionsPop}>
+                  <h3>Davii Collection</h3>
+                  <span>DC</span>
+                </button>
+              )}
+
+              {collectionsPop ? (
+                <div className="storePop">
+                  <div className="header">
+                    <button className="storeBtn">
+                      <span>DC</span>
+                      <h3>Davii Collection</h3>
+                    </button>
+
+                    <div className="allStores">
+                      <img src={StoreIcon} alt="" />
+                      <h3>All stores</h3>
+                    </div>
+                  </div>
+                  <hr />
+                  <div className="collection">
+                    <ul>
+                      <li>
+                        <a href="">Help Center</a>
+                      </li>
+                      <li>
+                        <a href="">Changelog</a>
+                      </li>
+                      <li>
+                        <a href="">Community forums</a>
+                      </li>
+                      <li>
+                        <a href="">Hire a Shopify Partner</a>
+                      </li>
+                      <li>
+                        <a href="">Keyboard shortcut</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr />
+                  <div className="account">
+                    <ul>
+                      <li>
+                        David Micheal <span>davidmicheal@gmail.com</span>
+                      </li>
+                      <li>
+                        <a href="">Manage account</a>
+                      </li>
+                      <li>
+                        <a href="">Log out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              ) : null}
             </div>
           </div>
-        ) : null}
+        </section>
       </header>
     </>
   );
 };
 
-export default Navbar;
+export default NavBar;

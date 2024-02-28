@@ -1,200 +1,247 @@
 header {
-  position: fixed;
+  max-width: 1200px;
+  width: 100%;
   background-color: #1a1a1a;
-  width: 100%;
-  padding: 5px;
+  padding: 15px 5px;
 }
-.navlayout {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
+.navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 10px 0;
+  /* gap: .5rem; */
 }
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 0.3rem;
 }
-.logoImg {
-  width: 30px;
-}
-.textLogo {
-  letter-spacing: 1.5px;
-  font-size: 23px;
-  color: #fff;
-}
-.searchinput {
+.input {
   position: relative;
 }
 input {
-  padding-left: 29px;
-  padding-right: 190px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  position: relative;
+  padding: 7px 190px 7px 30px;
   border: none;
-  border-radius: 0.5rem;
-  outline: none;
+  border-radius: 8px;
   background-color: #303030;
-  border: 1px solid #616161;
+}
+.searchIcon {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.6rem;
+  color: #b5b5b5;
+  z-index: 999;
 }
 ::placeholder {
   color: #b5b5b5;
 }
-.searchIcon {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  /* bottom: .6rem; */
-  color: #b5b5b5;
-  z-index: 999;
+/* notification stayle beging */
+.notificationAndStore {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 .bell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  font-size: 15px;
 }
-.bellDavii {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.6rem;
-}
-.bell {
+.notificationBtn {
+  padding: 5.7px;
+  border-radius: 8px;
   border: none;
-  border-radius: 8px;
-  color: #fff;
-  padding: 9px;
-  background: #303030;
-  cursor: pointer;
-}
-.davii {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 10px;
-  padding-right: 2px;
-  gap: 0.5rem;
-  background: #303030;
-  border-radius: 8px;
-}
-.davii p {
-  font-size: 12px;
   color: #ffff;
-}
-.davii button {
-  border: none;
-  padding: 3px;
-  border-radius: 6px;
-  background-color: #36fba1;
+  background-color: #303030;
   cursor: pointer;
 }
-.menu {
-  position: fixed;
+.notificationBtn:hover {
+  background-color: #616161;
+}
+.notificationBtn:focus {
+  border: 2px solid #005bd3;
+}
+.notificationPop {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  top: 5rem;
-  left: 75rem;
-  width: 320px;
-  height: 452px;
-  padding: 9px 7px;
-  background-color: #ffffff;
+  gap: 1rem;
+  padding: 16px;
+  top: 75px;
+  right: 15px;
+  border: 1px solid #dbdbdb;
+  z-index: 10;
   border-radius: 14px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.3s ease;
 }
-.daviiHeader {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-.daviiCheck {
+.alert {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  padding-left: 6px;
-  padding-right: 2px;
-  gap: 0.5rem;
-  background: #f1f1f1;
-  border-radius: 8px;
 }
-.checkIcon {
-  width: 30.67px;
-}
-.daviiHeader button {
-  border: none;
-  padding: 5px;
-  border-radius: 6px;
-  background-color: #36fba1;
-  cursor: pointer;
-}
-.stores {
+.filterAndCircleTick {
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
-  padding-bottom: 7px;
-  gap: 0.4rem;
+  gap: 1rem;
 }
-.stores img {
+.filter {
+  font-size: 20px;
+}
+.circleCheck {
+  font-size: 20px;
+}
+.circleCheck:active {
+  width: 20px;
+  border-radius: 4px;
+  border: 1px solid #005bd3;
+}
+.alertMessage {
+  padding: 16px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+/* notification stayle ends */
+
+.store button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px;
+  border-radius: 8px;
+  border: none;
+  color: #ffff;
+  background-color: #303030;
+  cursor: pointer;
+}
+.store h3 {
+  font-size: 12px;
+  color: #e3e3e3;
+}
+.store button:hover {
+  background-color: #616161;
+}
+.store button:focus {
+  border: 2px solid #005bd3;
+}
+.store button span {
+  padding: 5.5px;
+  background-color: #36fba1;
+  border-radius: 6px;
+}
+.storePop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 13px;
+  top: 75px;
+  right: 15px;
+  border: 1px solid #dbdbdb;
+  z-index: 10;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.3s ease;
+}
+.header .storeBtn {
+  display: flex;
+  padding: 7px 190px 5px 10px;
+  background-color: #f1f1f1;
+}
+.header .storeBtn:hover {
+  color: #ffff;
+  background-color: #303030;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header h3 {
+  font-size: 13px;
+  color: #303030;
+}
+.allStores {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.allStores img {
   width: 25px;
 }
-.hr {
+.allStores h3 {
+  font-size: 13px;
+  color: #303030;
+}
+hr {
   width: 100%;
 }
-.help{
-  margin-top: 1rem;
+.collection li {
+  padding: 10px 0px;
 }
-.help li{
-  padding: 10px 5px;
+.account li {
+  padding: 10px 0px;
 }
-.account{
-  margin-top: 1rem;
+.account li:first-child {
+  display: flex;
+  flex-direction: column;
 }
-.account li{
-  padding: 10px 5px;
-}
-.account small{
+.account li:first-child span {
+  font-size: 12px;
   color: #616161;
 }
-/*   */
 @media screen and (max-width: 540px) {
-  .textLogo {
+  .logoDesktop {
     display: none;
-  }
-  .davii p {
-    display: none;
-    border: none;
-    outline: none;
   }
   input {
-    width: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 15px;
+    /* width: 100%; */
+    padding: 7px 50px 7px 30px;
   }
-  .bellDavii {
-    gap: 0.2rem;
+  .store button h3 {
+    display: none;
   }
-  .davii {
-    background: none;
-  }
-  .bell {
-    background: none;
-  }
+  .notificationBtn {
+  background-color: #1a1a1a;
 }
-@media screen and (max-width: 320px) {
+.notificationBtn:hover {
+  background-color: #1a1a1a;
+}
+.notificationBtn:focus {
+  border: none;
+}
+/* .bell {
+  font-size: 13px;
+} */
+}
+@media screen and (max-width: 360px) {
+  .logoDesktop {
+    display: none;
+  }
+  input {
+    /* width: 100%; */
+    padding: 7px 20px 7px 30px;
+  }
+  .store button h3 {
+    display: none;
+  }
+  .notificationBtn {
+  background-color: #1a1a1a;
+}
+.notificationBtn:hover {
+  background-color: #1a1a1a;
+}
+.notificationBtn:focus {
+  border: none;
+}
+/* .bell {
+  font-size: 13px;
+} */
+}
+@media screen and (max-width: 280px) {
   input {
     width: 100%;
-    padding-right: 15px;
+    padding: 7px 10px 7px 30px;
   }
 }

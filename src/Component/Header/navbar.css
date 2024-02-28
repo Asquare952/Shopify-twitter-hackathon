@@ -166,6 +166,7 @@ input {
 .account small{
   color: #616161;
 }
+/*   */
 @media screen and (max-width: 540px) {
   .textLogo {
     display: none;

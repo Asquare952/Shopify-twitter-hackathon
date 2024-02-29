@@ -1,5 +1,5 @@
 header {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   width: 100%;
   background-color: #1a1a1a;
   padding: 15px ;
@@ -216,6 +216,9 @@ hr {
 } */
 }
 @media screen and (max-width: 360px) {
+  .navBar {
+  gap: .5rem;
+}
   .logoDesktop {
     display: none;
   }
@@ -235,9 +238,12 @@ hr {
 .notificationBtn:focus {
   border: none;
 }
-/* .bell {
-  font-size: 13px;
-} */
+}
+@media screen and (max-width: 320px) {
+  input {
+    width: 100%;
+    padding: 7px 20px 7px 30px;
+  }
 }
 @media screen and (max-width: 280px) {
   input {

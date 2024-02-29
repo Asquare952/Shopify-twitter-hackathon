@@ -97,19 +97,21 @@ const NavBar = () => {
                   <div className="collection">
                     <ul>
                       <li>
-                        <a href="">Help Center</a>
+                        <a href="https://www.shopify.com">Help Center</a>
                       </li>
                       <li>
-                        <a href="">Changelog</a>
+                        <a href="https://www.shopify.com">Changelog</a>
                       </li>
                       <li>
-                        <a href="">Community forums</a>
+                        <a href="https://www.shopify.com">Community forums</a>
                       </li>
                       <li>
-                        <a href="">Hire a Shopify Partner</a>
+                        <a href="https://www.shopify.com">
+                          Hire a Shopify Partner
+                        </a>
                       </li>
                       <li>
-                        <a href="">Keyboard shortcut</a>
+                        <a href="https://www.shopify.com">Keyboard shortcut</a>
                       </li>
                     </ul>
                   </div>
@@ -120,10 +122,10 @@ const NavBar = () => {
                         David Micheal <span>davidmicheal@gmail.com</span>
                       </li>
                       <li>
-                        <a href="">Manage account</a>
+                        <a href="https://www.shopify.com">Manage account</a>
                       </li>
                       <li>
-                        <a href="">Log out</a>
+                        <a href="http://admin.shopify.com/logout">Log out</a>
                       </li>
                     </ul>
                   </div>

@@ -1,8 +1,8 @@
 header {
-  max-width: 1200px;
+  max-width: 1600px;
   width: 100%;
   background-color: #1a1a1a;
-  padding: 15px 5px;
+  padding: 15px ;
 }
 .navBar {
   display: flex;

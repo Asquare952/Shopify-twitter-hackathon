@@ -1,0 +1,36 @@
+.setupGuideContainer{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  color: #303030;
+}
+.headerFrameOne{
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+.headerFrameOne .title{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+}
+.headerFrameOne p{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18.2px;
+}
+.headerFrameTwo{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 15px;
+}
+.headerFrameTwo p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+}

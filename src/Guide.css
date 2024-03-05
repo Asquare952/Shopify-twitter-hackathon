@@ -1,0 +1,40 @@
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.6rem;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.title h4 {
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18.2px;
+}
+.setUp {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+.detail p {
+  width: 483.86px;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18.2px;
+}
+.detail a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.2px;
+}
+.detail img {
+  width: 156.14px;
+}

@@ -14,7 +14,7 @@
   /* align-items: center; */
   position: relative;
 }
-button{
+.arrowBtn{
   border: none;
   background-color: #ffffff;
 }
@@ -48,8 +48,7 @@ button{
   line-height: 15.6px;
 }
 .setUpInfo{
-  margin-top: 1rem;
-    transition: 10s ease-in;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 820px) {
   .setupGuideContainer {

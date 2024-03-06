@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./plan.css"
+import "./plan.css";
 import { IoMdClose } from "react-icons/io";
 const Plan = () => {
   const [close, setClose] = useState(true);
-  const handleClose = () =>{
-    setClose(!close)
-  }
+  const handleClose = () => {
+    setClose(!close);
+  };
   return (
     <>
       {close && (
@@ -17,12 +17,10 @@ const Plan = () => {
               </p>
             </div>
             <div className="selectPlan">
-              <button>
+              <button className="planBtn">
                 <a href="https://www.shopify.com/pricing">Select a plan</a>
               </button>
-              
-                <IoMdClose onClick={handleClose} className="closeIcon" />
-              
+              <IoMdClose onClick={handleClose} className="closeIcon" />
             </div>
           </div>
         </section>

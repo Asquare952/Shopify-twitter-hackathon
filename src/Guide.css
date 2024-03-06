@@ -1,8 +1,13 @@
-.rightContainer {
+.setUp {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+}
+.left {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  gap: 0.6rem;
+  /* gap: 0.6rem; */
 }
 .title {
   display: flex;
@@ -16,10 +21,13 @@
   font-size: 13px;
   line-height: 18.2px;
 }
-.setUp {
+.btn{
+  padding-top: 0.6rem;
+  padding-left: 2rem;
+}
+.detail{
   display: flex;
-  justify-content: space-between;
-  padding: .5rem 0;
+  flex-direction: column;
 }
 .detail p {
   width: 483.86px;
@@ -35,6 +43,11 @@
   font-size: 14px;
   line-height: 19.2px;
 }
-.detail img {
-  width: 156.14px;
+@media screen and (max-width: 580px) {
+  .detail p{
+    width: 300.86px;
+  }
+  .right{
+    display: none;
+  }
 }

@@ -69,19 +69,25 @@ const NavBar = () => {
             </div>
             <div className="store">
               {collectionsPop ? (
-                <button onClick={handlecollectionsPop}>
+                <button
+                  className="storeCollectionBtn"
+                  onClick={handlecollectionsPop}
+                >
                   <h3>Davii Collection</h3>
                   <span>DC</span>
                 </button>
               ) : (
-                <button onClick={handlecollectionsPop}>
+                <button
+                  className="storeCollectionBtn"
+                  onClick={handlecollectionsPop}
+                >
                   <h3>Davii Collection</h3>
                   <span>DC</span>
                 </button>
               )}
 
               {collectionsPop ? (
-                <div className="storePop">
+                <div className="colllectionsPop">
                   <div className="header">
                     <button className="storeBtn">
                       <span>DC</span>

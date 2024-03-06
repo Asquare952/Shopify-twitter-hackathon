@@ -1,5 +1,6 @@
 import "./Guide.css";
 import { useState } from "react";
+import Button from "./Component/Button/Bottton";
 import TitleIcon from "./Assets/Frame 1000003540.png";
 import CustomizeImg from "./Assets/Customize your online store.img.png";
 import AddProductImg from "./Assets/Add your first product.img.png";
@@ -15,7 +16,7 @@ const Guide = () => {
   return (
     <>
       <article cle className="setUp">
-        <div className="rightContainer">
+        <div className="left">
           <div className="title">
             <div>
               <img src={TitleIcon} alt="" />
@@ -38,12 +39,19 @@ const Guide = () => {
               </p>
             )}
           </div>
+          {guideInfoOne && (
+            <div className="btn">
+              <Button text={"Customize theme"} />
+            </div>
+          )}
         </div>
-        <div>{guideInfoOne && <img src={CustomizeImg} alt="" />}</div>
+        <div className="right">
+          {guideInfoOne && <img src={CustomizeImg} alt="" />}
+        </div>
       </article>
       {/* step 2 */}
       <article cle className="setUp">
-        <div className="rightContainer">
+        <div className="left">
           <div className="title">
             <div>
               <img src={TitleIcon} alt="" />
@@ -66,12 +74,19 @@ const Guide = () => {
               </p>
             )}
           </div>
+          {guideInfoTwo && (
+            <div className="btn">
+              <Button text={"Add product"} />
+            </div>
+          )}
         </div>
-        <div>{guideInfoTwo && <img src={AddProductImg} alt="" />}</div>
+        <div className="right">
+          {guideInfoTwo && <img src={AddProductImg} alt="" />}
+        </div>
       </article>
       {/* step 3 */}
       <article cle className="setUp">
-        <div className="rightContainer">
+        <div className="left">
           <div className="title">
             <div>
               <img src={TitleIcon} alt="" />
@@ -95,12 +110,19 @@ const Guide = () => {
               </p>
             )}
           </div>
+          {guideInfoThree && (
+            <div className="btn">
+              <Button text={"Add domain"} />
+            </div>
+          )}
         </div>
-        <div>{guideInfoThree && <img src={AddCustomImg} alt="" />}</div>
+        <div className="right">
+          {guideInfoThree && <img src={AddCustomImg} alt="" />}
+        </div>
       </article>
       {/* step 4 */}
       <article cle className="setUp">
-        <div className="rightContainer">
+        <div className="left">
           <div className="title">
             <div>
               <img src={TitleIcon} alt="" />
@@ -124,12 +146,19 @@ const Guide = () => {
               </p>
             )}
           </div>
+          {guideInfoFour && (
+            <div className="btn">
+              <Button text={"Name store"} />
+            </div>
+          )}
         </div>
-        <div>{guideInfoFour && <img src={NameStore} alt="" />}</div>
+        <div className="right">
+          {guideInfoFour && <img src={NameStore} alt="" />}
+        </div>
       </article>
       {/* step 5 */}
       <article cle className="setUp">
-        <div className="rightContainer">
+        <div className="left">
           <div className="title">
             <div>
               <img src={TitleIcon} alt="" />
@@ -153,8 +182,15 @@ const Guide = () => {
               </p>
             )}
           </div>
+          {guideInfoFive && (
+            <div className="btn">
+              <Button text={"Set up payment"} />
+            </div>
+          )}
         </div>
-        <div>{guideInfoFive && <img src={SetPaymentImg} alt="" />}</div>
+        <div className="right">
+          {guideInfoFive && <img src={SetPaymentImg} alt="" />}
+        </div>
       </article>
     </>
   );

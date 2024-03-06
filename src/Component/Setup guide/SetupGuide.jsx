@@ -25,14 +25,14 @@ const SetupGuide = () => {
           </div>
           <div>
             {showsetUpGuide ? (
-              <button>
+              <button className="arrowBtn">
                 <IoIosArrowUp
                   className="arrowIcon"
                   onClick={handleSetUpGuide}
                 />
               </button>
             ) : (
-              <button>
+              <button className="arrowBtn">
                 <IoIosArrowDown
                   className="arrowIcon"
                   onClick={handleSetUpGuide}
@@ -41,9 +41,7 @@ const SetupGuide = () => {
             )}
           </div>
         </div>
-        <div className="setUpInfo expand">
-          {showsetUpGuide && <Guides />}
-        </div>
+        <div className="setUpInfo">{showsetUpGuide ? <Guides /> : null}</div>
       </section>
     </>
   );
